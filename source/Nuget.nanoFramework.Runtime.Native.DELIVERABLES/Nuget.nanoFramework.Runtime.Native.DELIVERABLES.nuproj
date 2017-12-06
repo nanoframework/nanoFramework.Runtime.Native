@@ -33,6 +33,11 @@
       <Link>content\disasm\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Dependency Include="nanoFramework.CoreLibrary">
+      <Version>[1.0.0-preview038]</Version>
+    </Dependency>
+  </ItemGroup>  
   <PropertyGroup Label="Globals">
     <ProjectGuid>46762344-3188-4861-9F37-3B15EDDD8A82</ProjectGuid>
   </PropertyGroup>
