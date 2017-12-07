@@ -9,7 +9,7 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| Class Libraries | [![Build status](https://ci.appveyor.com/api/projects/status/terbqvfdlw8po3cm?svg=true)](https://ci.appveyor.com/project/nfbot/nf-class-libraries) |  [![NuGet](https://img.shields.io/nuget/dt/nanoFramework.Runtime.Native.svg)]() |
+| Class Libraries | [![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native) | [![NuGet](https://img.shields.io/nuget/dt/nanoFramework.Runtime.Native.svg)](https://www.nuget.org/packages/nanoFramework.Runtime.Native) |
 
 
 ## Feedback and documentation
