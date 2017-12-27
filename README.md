@@ -10,8 +10,8 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| nanoFramework.Runtime.Native | [![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep/branch/master?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native/branch/master) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.Runtime.Native.svg)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/)  |
-| nanoFramework.Runtime.Native (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native/branch/develop) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.Runtime.Native.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.Runtime.Native) |
+| nanoFramework.Runtime.Native |[![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.Runtime.Native.svg)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/)  |
+| nanoFramework.Runtime.Native (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep/branch/develop?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native/branch/develop) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.Runtime.Native.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.Runtime.Native) |
 
 
 ## Feedback and documentation
