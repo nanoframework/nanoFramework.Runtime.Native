@@ -7,7 +7,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace nanoFramework.Runtime.Hardware
+namespace nanoFramework.Runtime.Native
 {
     /// <summary>
     /// Provides information about the system.
