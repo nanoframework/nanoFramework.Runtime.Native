@@ -59,6 +59,7 @@
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
+    <Compile Include="Power.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="SystemInfo.cs" />
     <Compile Include="ExecutionConstraint.cs" />
