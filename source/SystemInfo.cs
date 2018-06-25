@@ -67,5 +67,75 @@ namespace nanoFramework.Runtime.Native
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
         }
+
+        /// <summary>
+        /// Gets a <see cref="FloatingPoint"/> value with the information regarding the floating point support available in the target platform.
+        /// </summary>
+        static public FloatingPoint FlotingPointSupport
+        {
+            get
+            {
+                return (FloatingPoint)GetNativeFlotingPointSupport();
+            }
+        }
+
+        #region native calls
+
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        extern static private byte GetNativeFlotingPointSupport();
+
+        #endregion
+
+        #region Floating point support 
+
+        /// <summary>
+        /// Floating point options.
+        /// </summary>
+        public enum FloatingPoint
+        {
+            /// <summary>
+            /// None
+            /// </summary>
+            None = 0,
+
+            /// <summary>
+            /// Single precision floating point software emulated.
+            /// </summary>
+            /// <remarks>
+            /// The target platform supports calls to <see cref="Math"/> using the <see cref="float"/> overloads.
+            /// Calling the <see cref="double"/> methods will throw a <see cref="NotSupportedException"/>.
+            /// </remarks>
+            SinglePrecisionSoftware = 1,
+
+            /// <summary>
+            /// Single precision floating point calculation supported by hardware unit.
+            /// </summary>
+            /// <remarks>
+            /// The target platform supports calls to <see cref="Math"/> using the <see cref="float"/> overloads.
+            /// Calling the <see cref="double"/> methods will throw a <see cref="NotSupportedException"/>.
+            /// </remarks>
+            SinglePrecisionHardware = 2,
+
+            /// <summary>
+            /// Double precision floating point software emulated.
+            /// </summary>
+            /// <remarks>
+            /// The target platform supports calls to <see cref="Math"/> using the <see cref="double"/> overloads.
+            /// Calling the <see cref="float"/> methods will throw a <see cref="NotSupportedException"/>.
+            /// </remarks>
+            DoublePrecisionSoftware = 3,
+
+            /// <summary>
+            /// Double precision floating point calculation supported by hardware unit.
+            /// </summary>
+            /// <remarks>
+            /// The target platform supports calls to <see cref="Math"/> using the <see cref="double"/> overloads.
+            /// Calling the <see cref="float"/> methods will throw a <see cref="NotSupportedException"/>.
+            /// </remarks>
+            DoublePrecisionHardware = 4,
+
+        }
+
+        #endregion
     }
 }
