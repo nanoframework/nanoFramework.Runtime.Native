@@ -75,14 +75,14 @@ namespace nanoFramework.Runtime.Native
         {
             get
             {
-                return (FloatingPoint)GetNativeFlotingPointSupport();
+                return (FloatingPoint)GetNativeFloatingPointSupport();
             }
         }
 
         #region native calls
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        extern static private byte GetNativeFlotingPointSupport();
+        extern static private byte GetNativeFloatingPointSupport();
 
         #endregion
 
