@@ -71,7 +71,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a <see cref="FloatingPoint"/> value with the information regarding the floating point support available in the target platform.
         /// </summary>
-        static public FloatingPoint FlotingPointSupport
+        static public FloatingPoint FloatingPointSupport
         {
             get
             {
