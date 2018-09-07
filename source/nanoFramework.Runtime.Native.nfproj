@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Power.cs" />
     <Compile Include="Debug.cs" />
+    <Compile Include="ResourceUtility.cs" />
     <Compile Include="SystemInfo.cs" />
     <Compile Include="ExecutionConstraint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
