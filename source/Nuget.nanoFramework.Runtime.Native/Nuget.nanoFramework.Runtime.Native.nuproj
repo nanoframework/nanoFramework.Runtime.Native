@@ -10,20 +10,23 @@
       <Platform>AnyCPU</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup>
+    <GitVersion_NuGetVersionV2 Condition=" '$(GitVersion_NuGetVersionV2)' == '' ">1.0.0-preview001</GitVersion_NuGetVersionV2>
+  </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\bin\$(Configuration)\nanoFramework.Runtime.Native.dll">
+    <Content Include="..\nanoFramework.Runtime.Native\bin\$(Configuration)\nanoFramework.Runtime.Native.dll">
       <Link>lib\nanoFramework.Runtime.Native.dll</Link>
     </Content>
-    <Content Include="..\bin\$(Configuration)\nanoFramework.Runtime.Native.pdb">
+    <Content Include="..\nanoFramework.Runtime.Native\bin\$(Configuration)\nanoFramework.Runtime.Native.pdb">
       <Link>lib\nanoFramework.Runtime.Native.pdb</Link>
     </Content>
-    <Content Include="..\bin\$(Configuration)\nanoFramework.Runtime.Native.pdbx">
+    <Content Include="..\nanoFramework.Runtime.Native\bin\$(Configuration)\nanoFramework.Runtime.Native.pdbx">
       <Link>lib\nanoFramework.Runtime.Native.pdbx</Link>
     </Content>
-    <Content Include="..\bin\$(Configuration)\nanoFramework.Runtime.Native.pe">
+    <Content Include="..\nanoFramework.Runtime.Native\bin\$(Configuration)\nanoFramework.Runtime.Native.pe">
       <Link>lib\nanoFramework.Runtime.Native.pe</Link>
     </Content>
-    <Content Include="..\bin\$(Configuration)\nanoFramework.Runtime.Native.xml">
+    <Content Include="..\nanoFramework.Runtime.Native\bin\$(Configuration)\nanoFramework.Runtime.Native.xml">
       <Link>lib\nanoFramework.Runtime.Native.xml</Link>
     </Content>
   </ItemGroup>
