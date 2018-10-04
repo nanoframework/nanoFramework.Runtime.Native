@@ -199,6 +199,12 @@
     prerelease: true
     force_update: true
 
+  before_deploy:
+    - ps:  >-
+        .\commit-assemblyinfo-changes.ps1
+
+        .\generate-change-log.ps1
+
   # requires APPVEYOR_DISCORD_WEBHOOK_URL enviroment variable set with Discord webhook URL
   on_failure:
     - ps: |
