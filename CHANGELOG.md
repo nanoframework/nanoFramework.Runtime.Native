@@ -9,8 +9,8 @@
 - Add Power API [\#13](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/13)
 - Work Native.Rtc class [\#12](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/12)
 - Add new property FlotingPointSupport  to SystemInfo [\#11](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/11)
+- Fixed namespace inconsistency [\#10](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/10)
 - Add RTC class [\#5](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/5)
-- Revert DateTime package \(now it's back in mscorlib\) [\#4](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/4)
 - Update corlib reference [\#2](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/2)
 - Update project [\#1](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/1)
 
@@ -20,10 +20,12 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.0.1-preview118 to 1.0.1-preview123 [\#25](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/25)
 - 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview116 to 1.0.1-preview118 [\#24](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/24)
 - 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview106 to 1.0.1-preview116 [\#23](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/23)
 - Bump nanoFramework.CoreLibrary from 1.0.0-preview062 to 1.0.0-preview073 in /source [\#18](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/18)
-- Fixed namespace inconsistency [\#10](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/10)
+- Revert DateTime package \(now it's back in mscorlib\) [\#4](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/4)
+- Extracted Nuget build project to separate solution [\#3](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/3)
 
 
 
