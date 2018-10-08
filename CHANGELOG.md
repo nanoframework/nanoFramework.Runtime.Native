@@ -20,6 +20,7 @@
 
 **Documentation and other chores:**
 
+- 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview116 to 1.0.1-preview118 [\#24](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/24)
 - 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview106 to 1.0.1-preview116 [\#23](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/23)
 - Bump nanoFramework.CoreLibrary from 1.0.0-preview062 to 1.0.0-preview073 in /source [\#18](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/18)
 - Fixed namespace inconsistency [\#10](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/10)
