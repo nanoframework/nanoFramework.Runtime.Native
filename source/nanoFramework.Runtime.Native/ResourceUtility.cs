@@ -19,15 +19,7 @@ namespace nanoFramework.Runtime.Native
 
         static ResourceUtility()
         {
-            try
-            {
-                s_wr = new WeakReference(typeof(ResourceUtility));
-
-                string ciName = (string)s_wr.Target;
-            }
-            catch
-            {
-            }
+            s_wr = new WeakReference(typeof(ResourceUtility));
         }
 
         /// <summary>
