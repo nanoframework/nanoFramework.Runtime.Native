@@ -16,6 +16,7 @@
 
 **Fixed bugs:**
 
+- Fix exception in ResourceUtility constructor [\#27](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/27)
 - Correct typo in method name [\#14](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/14)
 
 **Documentation and other chores:**
