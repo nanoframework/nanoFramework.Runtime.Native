@@ -1,4 +1,4 @@
-[![NuGet](https://img.shields.io/nuget/dt/nanoFramework.Runtime.Native.svg)]() [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nanoframework/lib-nanoFramework.Runtime.Native)](https://dependabot.com) [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) [![Discord](https://img.shields.io/discord/478725473862549535.svg)](https://discord.gg/gCyBu8T)
+[![NuGet](https://img.shields.io/nuget/dt/nanoFramework.Runtime.Native.svg)]() [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) [![Discord](https://img.shields.io/discord/478725473862549535.svg)](https://discord.gg/gCyBu8T)
 
 
 ![nanoFramework logo](https://github.com/nanoframework/Home/blob/master/resources/logo/nanoFramework-repo-logo.png)
@@ -12,7 +12,7 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| nanoFramework.Runtime.Native |[![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.Runtime.Native.svg)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/)  |
+| nanoFramework.Runtime.Native |[![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep/branch/master?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native/master) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.Runtime.Native.svg)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/)  |
 | nanoFramework.Runtime.Native (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/1klaefyj6y9t2pep/branch/develop?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-runtime-native/branch/develop) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.Runtime.Native.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.Runtime.Native) |
 
 
