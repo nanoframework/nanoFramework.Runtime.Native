@@ -21,6 +21,7 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.0.1-preview127 to 1.0.1-preview134 [\#28](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/28)
 - Bumps nanoFramework.CoreLibrary from 1.0.1-preview123 to 1.0.1-preview127 [\#26](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/26)
 - Bumps nanoFramework.CoreLibrary from 1.0.1-preview118 to 1.0.1-preview123 [\#25](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/25)
 - 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview116 to 1.0.1-preview118 [\#24](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/24)
