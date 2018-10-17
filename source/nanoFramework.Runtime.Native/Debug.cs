@@ -1,4 +1,4 @@
-﻿//
+//
 // Copyright (c) 2017 The nanoFramework project contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
 // See LICENSE file in the project root for full license information.
@@ -18,7 +18,7 @@ namespace nanoFramework.Runtime.Native
         /// Runs GC (garbage collection), a service that automatically reclaims unused computer memory.
         /// </summary>
         /// <param name="force">true if garbage collection should be forced; otherwise, false.</param>
-        /// <returns></returns>
+        /// <returns>The amount of free (unused) memory, in bytes.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
         extern static public uint GC(bool force);
 
@@ -26,6 +26,10 @@ namespace nanoFramework.Runtime.Native
         /// Specifies whether GC (garbage collection) messages are enabled.
         /// </summary>
         /// <param name="enable">true to enable output of messages; otherwise, false.</param>
+        /// <remarks>
+        /// Despite this method enabling the GC messages there is the possibility of those never being outputted depending on the target build options.
+        /// RTM builds (which remove all non essential features) are one of those situations.
+        /// </remarks>
         [MethodImpl(MethodImplOptions.InternalCall)]
         extern static public void EnableGCMessages(bool enable);
 
