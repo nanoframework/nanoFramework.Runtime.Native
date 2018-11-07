@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>nanoFramework.Runtime.Native</id>
+    <version>$version$</version>
+    <title>nanoFramework.Runtime.Native</title>
+    <authors>nanoFramework project contributors</authors>
+    <owners>nanoFramework project contributors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+    <developmentDependency>false</developmentDependency>
+    <projectUrl>https://github.com/nanoframework</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/97d0e092247f0716db6d4b47b7d1d1ad</iconUrl>
+    <copyright>Copyright (c) 2018 The nanoFramework project contributors</copyright>    
+    <description>This package includes the nanoFramework.Runtime.Native assembly for nanoFramework C# projects.</description>
+    <summary>nanoFramework.Runtime.Native assembly for nanoFramework C# projects</summary>
+    <tags>nanoFramework C# csharp netmf netnf nanoFramework.Runtime.Native</tags>
+    <dependencies>
+      <dependency id="nanoFramework.CoreLibrary" version="[1.0.5-preview024]" />
+    </dependencies>    
+  </metadata>
+  <files>
+    <file src="nanoFramework.Runtime.Native\bin\Release\nanoFramework.Runtime.Native.dll" target="lib\nanoFramework.Runtime.Native.dll" />
+    <file src="nanoFramework.Runtime.Native\bin\Release\nanoFramework.Runtime.Native.pdb" target="lib\nanoFramework.Runtime.Native.pdb" />
+    <file src="nanoFramework.Runtime.Native\bin\Release\nanoFramework.Runtime.Native.pdbx" target="lib\nanoFramework.Runtime.Native.pdbx" />
+    <file src="nanoFramework.Runtime.Native\bin\Release\nanoFramework.Runtime.Native.pe" target="lib\nanoFramework.Runtime.Native.pe" />
+    <file src="nanoFramework.Runtime.Native\bin\Release\nanoFramework.Runtime.Native.xml" target="lib\nanoFramework.Runtime.Native.xml" /> 
+  </files>
+</package>
