@@ -2,7 +2,14 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-004...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-009...HEAD)
+
+**Fixed bugs:**
+
+- Fix exception in ResourceUtility constructor [\#38](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/38)
+
+## [v1.0.2-preview-009](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-009) (2018-11-19)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-004...v1.0.2-preview-009)
 
 **Documentation and other chores:**
 
