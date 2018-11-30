@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.0.2-preview-016](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-016) (2018-11-30)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-012...v1.0.2-preview-016)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.0.6-preview-010 to 1.0.6-preview-021 [\#42](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/42)
+
 ## [v1.0.2-preview-012](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-012) (2018-11-21)
 [Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-009...v1.0.2-preview-012)
 
