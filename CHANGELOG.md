@@ -1,7 +1,7 @@
 # Change Log
 
-## [v1.0.2-preview-068](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-068) (2018-12-14)
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-016...v1.0.2-preview-068)
+## [v1.0.2-preview-069](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-069) (2018-12-14)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-016...v1.0.2-preview-069)
 
 **Documentation and other chores:**
 
