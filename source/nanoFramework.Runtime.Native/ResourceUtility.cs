@@ -15,13 +15,6 @@ namespace nanoFramework.Runtime.Native
     /// </summary>
     public static class ResourceUtility
     {
-        private static WeakReference s_wr;
-
-        static ResourceUtility()
-        {
-            s_wr = new WeakReference(typeof(ResourceUtility));
-        }
-
         /// <summary>
         /// Gets the value of a specified <see cref="Object"/> resource for the current system culture.
         /// </summary>
