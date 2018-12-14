@@ -1,10 +1,11 @@
 # Change Log
 
-## [v1.0.2-preview-023](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-023) (2018-12-09)
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-016...v1.0.2-preview-023)
+## [v1.0.2-preview-026](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-026) (2018-12-14)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.2-preview-016...v1.0.2-preview-026)
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.0.6-preview-021 to 1.1.0 [\#44](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/44)
 - Improve documentation for ExecutionConstraint [\#43](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/43)
 
 ## [v1.0.2-preview-016](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-016) (2018-11-30)
