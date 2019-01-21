@@ -6,6 +6,7 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.1.0 to 1.1.1 [\#47](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/47)
 - Merge back from Release v1.0.2 [\#46](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/46)
 
 ## [v1.0.2](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2) (2018-12-14)
