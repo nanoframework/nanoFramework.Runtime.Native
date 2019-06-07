@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.0.5-preview-001](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.5-preview-001) (2019-04-23)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.3-preview-012...v1.0.5-preview-001)
+
 ## [v1.0.3-preview-012](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.3-preview-012) (2019-04-23)
 [Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.3-preview-011...v1.0.3-preview-012)
 
