@@ -69,6 +69,24 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
+        /// Gets a string that contains the target name.
+        /// </summary>
+        extern public static String TargetName
+        {
+            [MethodImpl(MethodImplOptions.InternalCall)]
+            get;
+        }
+
+        /// <summary>
+        /// Gets a string that contains the platform designation.
+        /// </summary>
+        extern public static String Platform
+        {
+            [MethodImpl(MethodImplOptions.InternalCall)]
+            get;
+        }
+
+        /// <summary>
         /// Gets a <see cref="FloatingPoint"/> value with the information regarding the floating point support available in the target platform.
         /// </summary>
         static public FloatingPoint FloatingPointSupport
