@@ -2,7 +2,14 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.7-preview.5...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.7-preview.8...HEAD)
+
+**Implemented enhancements:**
+
+- Add Platform and TargetName to SystemInfo class [\#57](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/57)
+
+## [v1.0.7-preview.8](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.7-preview.8) (2019-06-20)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.7-preview.5...v1.0.7-preview.8)
 
 **Documentation and other chores:**
 
