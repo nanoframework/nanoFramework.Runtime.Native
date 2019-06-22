@@ -45,6 +45,11 @@
     <Name>nanoFramework.Runtime.Native</Name>
   </PropertyGroup>
   <ItemGroup>
+    <NFMDP_PE_ExcludeClassByName Include="ThisAssembly">
+      <InProject>false</InProject>
+    </NFMDP_PE_ExcludeClassByName>
+  </ItemGroup>
+  <ItemGroup>
     <NFMDP_PE_ExcludeClassByName Include="Microsoft.SPOT.PublishInApplicationDirectoryAttribute">
       <InProject>false</InProject>
     </NFMDP_PE_ExcludeClassByName>
