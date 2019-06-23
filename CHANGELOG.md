@@ -10,6 +10,7 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.2.6-preview.1 to 1.2.6-preview.7 [\#60](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/60)
 - Work on native assembly declaration [\#58](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/58)
 
 ## [v1.0.7-preview.8](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.7-preview.8) (2019-06-20)
