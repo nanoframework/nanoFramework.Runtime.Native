@@ -1,8 +1,7 @@
 # Change Log
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/HEAD)
-
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.7-preview.15...HEAD)
+## [v1.0.7-preview.18](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.7-preview.18) (2019-07-18)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.0.7-preview.15...v1.0.7-preview.18)
 
 **Documentation and other chores:**
 
