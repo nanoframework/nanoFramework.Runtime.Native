@@ -17,11 +17,11 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Runs GC (garbage collection), a service that automatically reclaims unused computer memory.
         /// </summary>
-        /// <param name="force">true if garbage collection should be forced; otherwise, false.</param>
+        /// <param name="compactHeap"><see langword="true"/> to force heap compaction; otherwise, <see langword="false"/>.</param>
         /// <returns>The amount of free (unused) memory, in bytes.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
 #pragma warning disable S4200 // Native methods should be wrapped
-        extern static public uint GC(bool force);
+        extern static public uint GC(bool compactHeap);
 #pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
