@@ -20,7 +20,9 @@ namespace nanoFramework.Runtime.Native
         /// <param name="force">true if garbage collection should be forced; otherwise, false.</param>
         /// <returns>The amount of free (unused) memory, in bytes.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         extern static public uint GC(bool force);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Specifies whether GC (garbage collection) messages are enabled.
@@ -31,7 +33,9 @@ namespace nanoFramework.Runtime.Native
         /// RTM builds (which remove all non essential features) are one of those situations.
         /// </remarks>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         extern static public void EnableGCMessages(bool enable);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         //--//
 
@@ -39,7 +43,7 @@ namespace nanoFramework.Runtime.Native
         /// Causes a break in execution if the specified assertion (condition) evaluates to false.
         /// </summary>
         /// <param name="condition">The condition to be evaluated. If the value is false, program execution stops.</param>
-        [System.Diagnostics.Conditional("DEBUG")]
+        [Conditional("DEBUG")]
         static public void Assert(bool condition)
         {
             if (!condition)
@@ -53,7 +57,7 @@ namespace nanoFramework.Runtime.Native
         /// </summary>
         /// <param name="condition">The condition to be evaluated. If the value is false, program execution stops.</param>
         /// <param name="message">The text to be output if the assertion is false.</param>
-        [System.Diagnostics.Conditional("DEBUG")]
+        [Conditional("DEBUG")]
         static public void Assert(bool condition, string message)
         {
             if (!condition)
@@ -68,7 +72,7 @@ namespace nanoFramework.Runtime.Native
         /// <param name="condition">The condition to be evaluated. If the value is false, program execution stops.</param>
         /// <param name="message">The text to be output if the assertion is false.</param>
         /// <param name="detailedMessage">The detailed message to be displayed if the assertion is false.</param>
-        [System.Diagnostics.Conditional("DEBUG")]
+        [Conditional("DEBUG")]
         static public void Assert(bool condition, string message, string detailedMessage)
         {
             if (!condition)
@@ -76,5 +80,33 @@ namespace nanoFramework.Runtime.Native
                 Debugger.Break();
             }
         }
+
+        /// <summary>
+        /// Writes a message to the trace listeners in the Listeners collection.
+        /// </summary>
+        /// <param name="message">A message to write.</param>
+        /// <remarks>
+        /// In nanoFramework implementation the message is output to Visual Studio debugger window.
+        /// </remarks>
+        [Conditional("DEBUG")]
+#pragma warning disable S4200 // Native methods should be wrapped
+        public static void Write(string message) => WriteLineNative(message, false);
+#pragma warning restore S4200 // Native methods should be wrapped
+
+        /// <summary>
+        /// Writes a message followed by a line terminator to the trace listeners in the Listeners collection.
+        /// </summary>
+        /// <param name="message">A message to write.</param>
+        /// <remarks>
+        /// In nanoFramework implementation the message is output to Visual Studio debugger window.
+        /// </remarks>
+        [Conditional("DEBUG")]
+#pragma warning disable S4200 // Native methods should be wrapped
+        public static void WriteLine(string message) => WriteLineNative(message, true);
+#pragma warning restore S4200 // Native methods should be wrapped
+
+
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        extern static private void WriteLineNative(string text, bool addLineFeed);
     }
 }
