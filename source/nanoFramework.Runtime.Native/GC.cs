@@ -10,9 +10,9 @@ using System.Runtime.CompilerServices;
 namespace nanoFramework.Runtime.Native
 {
     /// <summary>
-    /// Provides a set of methods and properties that help developers to debug code.
+    /// Provides a set of methods and properties to control GC (garbage collection), a service that automatically reclaims unused computer memory.
     /// </summary>
-    public static class Debug
+    public static class GC
     {
         /// <summary>
         /// Runs GC (garbage collection), a service that automatically reclaims unused computer memory.
@@ -21,7 +21,7 @@ namespace nanoFramework.Runtime.Native
         /// <returns>The amount of free (unused) memory, in bytes.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
 #pragma warning disable S4200 // Native methods should be wrapped
-        extern static public uint GC(bool compactHeap);
+        extern static public uint Run(bool compactHeap);
 #pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
