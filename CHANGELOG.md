@@ -2,7 +2,31 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.4.0-preview.1...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.5.0...HEAD)
+
+**Documentation and other chores:**
+
+- Update dependencies [\#91](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/91)
+
+## [v1.5.0](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.5.0) (2020-06-17)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.4.0...v1.5.0)
+
+**Documentation and other chores:**
+
+- Release release-v1.5.0 [\#90](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/90)
+
+## [v1.4.0](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.4.0) (2020-06-11)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.4.0-preview.3...v1.4.0)
+
+**Documentation and other chores:**
+
+- Release release-v1.4.0 [\#89](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/89)
+
+## [v1.4.0-preview.3](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.4.0-preview.3) (2020-06-11)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.4.0-preview.1...v1.4.0-preview.3)
 
 **Documentation and other chores:**
 
@@ -295,6 +319,7 @@
 **Documentation and other chores:**
 
 - Bumps nanoFramework.CoreLibrary from 1.0.6-preview-010 to 1.0.6-preview-021 [\#42](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/42)
+- Bumps nanoFramework.CoreLibrary from 1.0.1-preview127 to 1.0.1-preview134 [\#28](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/28)
 
 ## [v1.0.2-preview-012](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.0.2-preview-012) (2018-11-21)
 
@@ -352,7 +377,6 @@
 **Documentation and other chores:**
 
 - Bumps nanoFramework.CoreLibrary from 1.0.1-preview134 to 1.0.4 [\#30](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/30)
-- Bumps nanoFramework.CoreLibrary from 1.0.1-preview127 to 1.0.1-preview134 [\#28](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/28)
 - Bumps nanoFramework.CoreLibrary from 1.0.1-preview123 to 1.0.1-preview127 [\#26](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/26)
 - Bumps nanoFramework.CoreLibrary from 1.0.1-preview118 to 1.0.1-preview123 [\#25](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/25)
 - 📦 Bumps nanoFramework.CoreLibrary from 1.0.1-preview116 to 1.0.1-preview118 [\#24](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/24)
