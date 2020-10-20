@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.5.1-preview.9...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.5.1-preview.11...HEAD)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.9.0-preview.5 to 1.9.1-preview.4 [\#94](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/pull/94)
+
+## [v1.5.1-preview.11](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.5.1-preview.11) (2020-09-30)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/compare/v1.5.1-preview.9...v1.5.1-preview.11)
 
 **Documentation and other chores:**
 
