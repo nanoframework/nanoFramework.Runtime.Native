@@ -25,7 +25,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   nugetPackageName: 'nanoFramework.Runtime.Native'
-  repoName: 'lib-nanoFramework.Runtime.Native'
+  repoName: 'nanoFramework.Runtime.Native'
 
 steps:
 
