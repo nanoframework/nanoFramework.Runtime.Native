@@ -1,6 +1,6 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/HEAD)
+## [v1.4.0](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.4.0) (2020-06-11)
 
 [Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2-preview.6...HEAD)
 
