@@ -1,8 +1,8 @@
 # Changelog
 
-## [v1.4.0](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native/tree/v1.4.0) (2020-06-11)
+## [v1.5.2-preview.8](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.2-preview.8) (2021-12-02)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2-preview.6...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2-preview.6...v1.5.2-preview.8)
 
 **Documentation and other chores:**
 
