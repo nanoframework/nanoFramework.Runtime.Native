@@ -46,6 +46,7 @@
     <Compile Include="ExecutionConstraint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rtc.cs" />
+    <Compile Include="System\Environment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="key.snk" />
