@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.3-preview.4...HEAD)
+
+**Implemented enhancements:**
+
+- Add Environment.TickCount64 [\#120](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/120)
+
+## [v1.5.3-preview.4](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.3-preview.4) (2022-01-20)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2...v1.5.3-preview.4)
 
 **Documentation and other chores:**
 
