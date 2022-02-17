@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.1...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.3...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#122](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/122)
+
+## [v1.5.4-preview.3](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.3) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.1...v1.5.4-preview.3)
 
 **Documentation and other chores:**
 
