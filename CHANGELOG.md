@@ -2,6 +2,66 @@
 
 ## [v1.5.2-preview.8](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.2-preview.8) (2021-12-02)
 
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.10...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#125](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/125)
+
+## [v1.5.4-preview.10](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.10) (2022-03-17)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.8...v1.5.4-preview.10)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#124](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/124)
+
+## [v1.5.4-preview.8](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.8) (2022-03-14)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.5...v1.5.4-preview.8)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#123](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/123)
+
+## [v1.5.4-preview.5](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.5) (2022-02-17)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.3...v1.5.4-preview.5)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#122](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/122)
+
+## [v1.5.4-preview.3](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.3) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.4-preview.1...v1.5.4-preview.3)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#121](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/121)
+
+## [v1.5.4-preview.1](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.4-preview.1) (2022-01-24)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.3-preview.4...v1.5.4-preview.1)
+
+**Implemented enhancements:**
+
+- Add Environment.TickCount64 [\#120](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/120)
+
+## [v1.5.3-preview.4](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.3-preview.4) (2022-01-20)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2...v1.5.3-preview.4)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#119](https://github.com/nanoframework/nanoFramework.Runtime.Native/pull/119)
+
+## [v1.5.2](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.2) (2021-12-02)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2-preview.8...v1.5.2)
+
+## [v1.5.2-preview.8](https://github.com/nanoframework/nanoFramework.Runtime.Native/tree/v1.5.2-preview.8) (2021-12-02)
+
 [Full Changelog](https://github.com/nanoframework/nanoFramework.Runtime.Native/compare/v1.5.2-preview.6...v1.5.2-preview.8)
 
 **Documentation and other chores:**
