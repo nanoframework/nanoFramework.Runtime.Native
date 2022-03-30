@@ -10,8 +10,7 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| nanoFramework.Runtime.Native | [![Build Status](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_apis/build/status/nanoframework.lib-nanoFramework.Runtime.Native?branchName=develop)](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_build/latest?definitionId=9?branchName=master) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.Runtime.Native.svg?label=NuGet&style=flat&logo=nuge)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/) |
-| nanoFramework.Runtime.Native (preview) | [![Build Status](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_apis/build/status/nanoframework.lib-nanoFramework.Runtime.Native?branchName=develop)](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_build/latest?definitionId=9?branchName=develop) | [![](https://badgen.net/badge/NuGet/preview/D7B023?icon=https://simpleicons.now.sh/azuredevops/fff)](https://dev.azure.com/nanoframework/feed/_packaging?_a=package&feed=sandbox&package=nanoFramework.Runtime.Native&protocolType=NuGet&view=overview) |
+| nanoFramework.Runtime.Native | [![Build Status](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_apis/build/status/nanoFramework.Runtime.Native?repoName=nanoframework%2FnanoFramework.Runtime.Native&branchName=main)](https://dev.azure.com/nanoframework/nanoFramework.Runtime.Native/_build/latest?definitionId=9&repoName=nanoframework%2FnanoFramework.Runtime.Native&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.Runtime.Native.svg?label=NuGet&style=flat&logo=nuge)](https://www.nuget.org/packages/nanoFramework.Runtime.Native/) |
 
 ## Feedback and documentation
 
