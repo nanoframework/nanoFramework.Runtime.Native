@@ -1,10 +1,6 @@
-//
-// Copyright (c) .NET Foundation and Contributors
-// Portions Copyright (c) Microsoft Corporation.  All rights reserved.
-// See LICENSE file in the project root for full license information.
-//
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 
-using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
 namespace nanoFramework.Runtime.Native
@@ -14,15 +10,15 @@ namespace nanoFramework.Runtime.Native
     /// </summary>
     public static class GC
     {
+#pragma warning disable S4200 // Native methods should be wrapped
+
         /// <summary>
         /// Runs GC (garbage collection), a service that automatically reclaims unused computer memory.
         /// </summary>
         /// <param name="compactHeap"><see langword="true"/> to force heap compaction; otherwise, <see langword="false"/>.</param>
         /// <returns>The amount of free (unused) memory, in bytes.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
-#pragma warning disable S4200 // Native methods should be wrapped
-        extern static public uint Run(bool compactHeap);
-#pragma warning restore S4200 // Native methods should be wrapped
+        public static extern uint Run(bool compactHeap);
 
         /// <summary>
         /// Specifies whether GC (garbage collection) messages are enabled.
@@ -33,8 +29,8 @@ namespace nanoFramework.Runtime.Native
         /// RTM builds (which remove all non essential features) are one of those situations.
         /// </remarks>
         [MethodImpl(MethodImplOptions.InternalCall)]
-#pragma warning disable S4200 // Native methods should be wrapped
-        extern static public void EnableGCMessages(bool enable);
+        public static extern void EnableGCMessages(bool enable);
+
 #pragma warning restore S4200 // Native methods should be wrapped
     }
 }

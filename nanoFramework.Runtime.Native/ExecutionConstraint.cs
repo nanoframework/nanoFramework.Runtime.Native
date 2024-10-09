@@ -1,8 +1,5 @@
-﻿//
-// Copyright (c) .NET Foundation and Contributors
-// Portions Copyright (c) Microsoft Corporation.  All rights reserved.
-// See LICENSE file in the project root for full license information.
-//
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
 using System.Runtime.CompilerServices;
@@ -24,6 +21,7 @@ namespace nanoFramework.Runtime.Native
     /// </summary>
     public static class ExecutionConstraint
     {
+#pragma warning disable S4200 // Native methods should be wrapped
         /// <summary>
         /// Creates a sub-thread within the calling thread, containing a constraint that requires the calling thread to complete an operation within a specified time period and at a specified priority level. 
         /// </summary>
@@ -36,6 +34,7 @@ namespace nanoFramework.Runtime.Native
         /// <exception cref="Exception">The system is unable to identify the thread that is installing this constraint.</exception>
         /// <exception cref="Exception">The thread installing this constraint does not own the sub-thread that the constraint applies to.</exception>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        extern static public void Install(int timeoutMilliseconds, int priority);
+        public static extern void Install(int timeoutMilliseconds, int priority);
+#pragma warning restore S4200 // OK to call Native methods like this in .NET nanoFramework
     }
 }
