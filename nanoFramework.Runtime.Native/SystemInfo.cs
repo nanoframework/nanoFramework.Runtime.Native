@@ -1,8 +1,5 @@
-﻿//
-// Copyright (c) .NET Foundation and Contributors
-// Portions Copyright (c) Microsoft Corporation.  All rights reserved.
-// See LICENSE file in the project root for full license information.
-//
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
 using System.Runtime.CompilerServices;
@@ -15,7 +12,11 @@ namespace nanoFramework.Runtime.Native
     public static class SystemInfo
     {
         [MethodImpl(MethodImplOptions.InternalCall)]
-        extern private static void GetSystemVersion(out int major, out int minor, out int build, out int revision);
+        private static extern void GetSystemVersion(
+            out int major,
+            out int minor,
+            out int build,
+            out int revision);
 
         /// <summary>
         /// Gets a string containing version information about this system. 
@@ -24,18 +25,24 @@ namespace nanoFramework.Runtime.Native
         {
             get
             {
-                int major, minor, build, revision;
+                GetSystemVersion(
+                    out int major,
+                    out int minor,
+                    out int build,
+                    out int revision);
 
-                GetSystemVersion(out major, out minor, out build, out revision);
-
-                return new Version(major, minor, build, revision);
+                return new Version(
+                    major,
+                    minor,
+                    build,
+                    revision);
             }
         }
 
         /// <summary>
         /// Gets a string that contains information provided by the equipment manufacturer (OEM) about this system.
         /// </summary>
-        extern public static String OEMString
+        public static extern string OEMString
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -44,7 +51,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a value that represents an original equipment manufacturer (OEM).
         /// </summary>
-        extern static public byte OEM
+        public static extern byte OEM
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -53,7 +60,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a value that represents a product model.
         /// </summary>
-        extern static public byte Model
+        public static extern byte Model
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -62,7 +69,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a value that represents a product's stock-keeping unit (SKU).
         /// </summary>
-        extern static public ushort SKU
+        public static extern ushort SKU
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -71,7 +78,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a string that contains the target name.
         /// </summary>
-        extern public static String TargetName
+        public static extern string TargetName
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -80,7 +87,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a string that contains the platform designation.
         /// </summary>
-        extern public static String Platform
+        public static extern string Platform
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
             get;
@@ -89,7 +96,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a <see cref="FloatingPoint"/> value with the information regarding the floating point support available in the target platform.
         /// </summary>
-        static public FloatingPoint FloatingPointSupport
+        public static FloatingPoint FloatingPointSupport
         {
             get
             {
@@ -100,7 +107,7 @@ namespace nanoFramework.Runtime.Native
         #region native calls
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        extern static private byte GetNativeFloatingPointSupport();
+        private static extern byte GetNativeFloatingPointSupport();
 
         #endregion
 
@@ -147,11 +154,10 @@ namespace nanoFramework.Runtime.Native
             /// Double precision floating point calculation supported by hardware unit.
             /// </summary>
             /// <remarks>
-            /// The target platform supports calls to <see cref="Math"/> using the <see cref="double"/> overloads.
+            /// The target platform supports calls to Math namespace using the <see cref="double"/> overloads.
             /// Calling the <see cref="float"/> methods will throw a <see cref="NotSupportedException"/>.
             /// </remarks>
             DoublePrecisionHardware = 4,
-
         }
 
         #endregion
