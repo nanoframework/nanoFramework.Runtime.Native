@@ -6,27 +6,33 @@ using System.Runtime.CompilerServices;
 namespace nanoFramework.Runtime.Native
 {
     /// <summary>
-    /// Provides a set of methods and properties to control GC (garbage collection), a service that automatically reclaims unused computer memory.
+    /// Provides a set of methods and properties for interacting with the garbage collector.
     /// </summary>
     public static class GC
     {
 #pragma warning disable S4200 // Native methods should be wrapped
 
         /// <summary>
-        /// Runs GC (garbage collection), a service that automatically reclaims unused computer memory.
+        /// Forces an immediate garbage collection of all generations.
         /// </summary>
-        /// <param name="compactHeap"><see langword="true"/> to force heap compaction; otherwise, <see langword="false"/>.</param>
-        /// <returns>The amount of free (unused) memory, in bytes.</returns>
+        /// <param name="compactHeap">
+        /// <see langword="true"/> to force heap compaction; otherwise, <see langword="false"/>.
+        /// </param>
+        /// <returns>
+        /// The amount of free memory, in bytes, after the garbage collection.
+        /// </returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern uint Run(bool compactHeap);
 
         /// <summary>
-        /// Specifies whether GC (garbage collection) messages are enabled.
+        /// Enables or disables the output of garbage collection messages.
         /// </summary>
-        /// <param name="enable">true to enable output of messages; otherwise, false.</param>
+        /// <param name="enable">
+        /// <see langword="true"/> to enable the output of GC messages; otherwise, <see langword="false"/>.
+        /// </param>
         /// <remarks>
-        /// Despite this method enabling the GC messages there is the possibility of those never being outputted depending on the target build options.
-        /// RTM builds (which remove all non essential features) are one of those situations.
+        /// Enabling GC messages may not always result in output, depending on the target build options.
+        /// For example, RTM builds, which remove all non-essential features, may not output these messages.
         /// </remarks>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern void EnableGCMessages(bool enable);

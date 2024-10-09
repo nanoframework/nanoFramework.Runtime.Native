@@ -11,9 +11,14 @@ namespace System
     public static partial class Environment
     {
         /// <summary>
-        /// Gets the number of milliseconds elapsed since the system started.
+        /// Gets the number of milliseconds that have elapsed since the system started.
         /// </summary>
-        /// <value>The elapsed milliseconds since the system started.</value>
+        /// <value>
+        /// A 64-bit signed integer representing the number of milliseconds that have elapsed since the system started.
+        /// </value>
+        /// <remarks>
+        /// This property is intended to be used for measuring time intervals. The value of this property is derived from the system timer and is subject to the resolution of the system timer.
+        /// </remarks>
         public static extern long TickCount64
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
