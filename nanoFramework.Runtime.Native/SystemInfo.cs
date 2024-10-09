@@ -16,8 +16,9 @@ namespace nanoFramework.Runtime.Native
             out int revision);
 
         /// <summary>
-        /// Gets a string containing version information about this system. 
+        /// Gets the version information about the system.
         /// </summary>
+        /// <value>A <see cref="Version"/> object that describes the version of the system.</value>
         public static Version Version
         {
             get
@@ -37,8 +38,9 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// Gets a string that contains information provided by the equipment manufacturer (OEM) about this system.
+        /// Gets a string that contains information provided by the original equipment manufacturer (OEM) about this system.
         /// </summary>
+        /// <value>A string that contains OEM information.</value>
         public static extern string OEMString
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -46,8 +48,9 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// Gets a value that represents an original equipment manufacturer (OEM).
+        /// Gets a value that represents the original equipment manufacturer (OEM).
         /// </summary>
+        /// <value>A byte that represents the OEM.</value>
         public static extern byte OEM
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -55,8 +58,9 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// Gets a value that represents a product model.
+        /// Gets a value that represents the product model.
         /// </summary>
+        /// <value>A byte that represents the product model.</value>
         public static extern byte Model
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -64,8 +68,9 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// Gets a value that represents a product's stock-keeping unit (SKU).
+        /// Gets a value that represents the product's stock-keeping unit (SKU).
         /// </summary>
+        /// <value>A ushort that represents the SKU.</value>
         public static extern ushort SKU
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -75,6 +80,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a string that contains the target name.
         /// </summary>
+        /// <value>A string that contains the target name.</value>
         public static extern string TargetName
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -84,6 +90,7 @@ namespace nanoFramework.Runtime.Native
         /// <summary>
         /// Gets a string that contains the platform designation.
         /// </summary>
+        /// <value>A string that contains the platform designation.</value>
         public static extern string Platform
         {
             [MethodImpl(MethodImplOptions.InternalCall)]
@@ -91,8 +98,9 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// Gets a <see cref="FloatingPoint"/> value with the information regarding the floating point support available in the target platform.
+        /// Gets a <see cref="FloatingPoint"/> value that indicates the floating point support available on the target platform.
         /// </summary>
+        /// <value>A <see cref="FloatingPoint"/> value that indicates the floating point support.</value>
         public static FloatingPoint FloatingPointSupport
         {
             get
@@ -111,12 +119,12 @@ namespace nanoFramework.Runtime.Native
         #region Floating point support 
 
         /// <summary>
-        /// Floating point options.
+        /// Specifies the floating point support options.
         /// </summary>
         public enum FloatingPoint
         {
             /// <summary>
-            /// None
+            /// No floating point support.
             /// </summary>
             None = 0,
 
@@ -124,7 +132,7 @@ namespace nanoFramework.Runtime.Native
             /// Single precision floating point software emulated.
             /// </summary>
             /// <remarks>
-            /// The target platform supports calls to <see cref="Math"/> using the <see cref="float"/> overloads.
+            /// The target platform supports calls to the Math namespace using the <see cref="float"/> overloads.
             /// Calling the <see cref="double"/> methods will throw a <see cref="NotSupportedException"/>.
             /// </remarks>
             SinglePrecisionSoftware = 1,
@@ -133,7 +141,7 @@ namespace nanoFramework.Runtime.Native
             /// Single precision floating point calculation supported by hardware unit.
             /// </summary>
             /// <remarks>
-            /// The target platform supports calls to <see cref="Math"/> using the <see cref="float"/> overloads.
+            /// The target platform supports calls to the Math namespace using the <see cref="float"/> overloads.
             /// Calling the <see cref="double"/> methods will throw a <see cref="NotSupportedException"/>.
             /// </remarks>
             SinglePrecisionHardware = 2,
@@ -142,7 +150,7 @@ namespace nanoFramework.Runtime.Native
             /// Double precision floating point software emulated.
             /// </summary>
             /// <remarks>
-            /// The target platform supports calls to <see cref="Math"/> using the <see cref="double"/> overloads.
+            /// The target platform supports calls to the Math namespace using the <see cref="double"/> overloads.
             /// Calling the <see cref="float"/> methods will throw a <see cref="NotSupportedException"/>.
             /// </remarks>
             DoublePrecisionSoftware = 3,
@@ -151,7 +159,7 @@ namespace nanoFramework.Runtime.Native
             /// Double precision floating point calculation supported by hardware unit.
             /// </summary>
             /// <remarks>
-            /// The target platform supports calls to Math namespace using the <see cref="double"/> overloads.
+            /// The target platform supports calls to the Math namespace using the <see cref="double"/> overloads.
             /// Calling the <see cref="float"/> methods will throw a <see cref="NotSupportedException"/>.
             /// </remarks>
             DoublePrecisionHardware = 4,

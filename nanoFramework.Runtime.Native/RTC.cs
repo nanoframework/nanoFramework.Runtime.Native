@@ -4,16 +4,18 @@
 namespace nanoFramework.Runtime.Native
 {
     /// <summary>
-    /// Provides a set of methods that help developers to manage the RTC (Real Time Clock) on the target device.
+    /// Provides a set of methods that help developers to manage the Real Time Clock (RTC) on the target device.
     /// </summary>
     public static class Rtc
     {
         /// <summary>
-        /// Sets the current system time and date.
+        /// Sets the current system date and time.
         /// </summary>
-        /// <param name="time"><see cref="System.DateTime"/> structure that contains the new system date and time.</param>
-        /// <returns>If the function succeeds, the return value is true.</returns>
-        /// <remarks>This method is specific to nanoFramework. The actual availability of the resulting feature depends on the availability on target platform that's running the nanoCLR.</remarks>
+        /// <param name="time">A <see cref="System.DateTime"/> structure that contains the new system date and time.</param>
+        /// <returns><see langword="true"/> if the function succeeds; otherwise, <see langword="false"/>.</returns>
+        /// <remarks>
+        /// This method is specific to nanoFramework. The actual availability of this feature depends on the target platform running the nanoCLR.
+        /// </remarks>
         public static bool SetSystemTime(System.DateTime time) => Native_RTC_SetSystemTime(
             time.Year,
             (byte)time.Month,

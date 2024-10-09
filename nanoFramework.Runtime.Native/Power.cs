@@ -4,34 +4,33 @@
 namespace nanoFramework.Runtime.Native
 {
     /// <summary>
-    /// The event handler delegate for the <see cref="Power.OnRebootEvent"/> event.
+    /// Represents the method that will handle the <see cref="Power.OnRebootEvent"/> event.
     /// </summary>
     public delegate void RebootEventHandler();
 
     /// <summary>
-    /// Provides access to power management functionalities on target device.
+    /// Provides access to power management functionalities on the target device.
     /// </summary>
     /// <remarks>
-    /// This API is a general one common to all devices. There could be available target specific APIs providing other methods.
+    /// This API is a general one common to all devices. There are platform-specific APIs available.
     /// </remarks>
     public class Power
     {
         /// <summary>
-        /// This event notifies listeners prior to a device reboot.  The event handlers may have an execution
-        /// constraint placed on them by the caller of the Reboot method.  Therefore, it is recommended that the event handlers
-        /// be short atomic operations.
-        /// </summary>
-        public static event RebootEventHandler OnRebootEvent;
-
-
-        /// <summary>
-        /// The RebootDevice method enables the caller to force a reboot of the device.
-        /// This method raises the OnRebootEvent.
+        /// Occurs before the device reboots.
         /// </summary>
         /// <remarks>
-        /// If there are any handlers subscribing <see cref="OnRebootEvent"/> the reboot will happen only after all handlers complete their execution, no matter the time that takes.
-        /// In case the developer want's to set a timeout for those to complete, use the alternative <see cref="RebootDevice(int)"/> call and 
-        /// set an execution constrain.
+        /// The event handlers may have an execution constraint placed on them by the caller of the <see cref="RebootDevice()"/> method.
+        /// Therefore, it is recommended that the event handlers perform short, atomic operations.
+        /// </remarks>
+        public static event RebootEventHandler OnRebootEvent;
+
+        /// <summary>
+        /// Forces a reboot of the device.
+        /// </summary>
+        /// <remarks>
+        /// This method raises the <see cref="OnRebootEvent"/>. If there are any handlers subscribing to <see cref="OnRebootEvent"/>, the reboot will occur only after all handlers complete their execution, regardless of the time taken.
+        /// To set a timeout for the handlers to complete, use the <see cref="RebootDevice(int)"/> method and specify an execution constraint.
         /// </remarks>
         public static void RebootDevice()
         {
@@ -39,31 +38,28 @@ namespace nanoFramework.Runtime.Native
         }
 
         /// <summary>
-        /// The RebootDevice method enables the caller to force a reboot of the device.
-        /// This method raises the OnRebootEvent.
+        /// Forces a reboot of the device with an execution constraint timeout for event handlers.
         /// </summary>
-        /// <param name="exeConstraintTimeout">Execution constraint timeout (in milliseconds) for
-        /// the event handlers. If the event handlers take longer than the given value, then
-        /// the handlers will be aborted and the reboot will be executed.
+        /// <param name="exeConstraintTimeout">
+        /// The execution constraint timeout, in milliseconds, for the event handlers to complete. 
+        /// If the event handlers take longer than the allotted time, they will be aborted and the reboot will be executed.
         /// </param>
         public static void RebootDevice(int exeConstraintTimeout)
         {
             try
             {
                 ExecutionConstraint.Install(exeConstraintTimeout, 4);
-
                 OnRebootEvent?.Invoke();
             }
             catch
             {
-                // don't throw exceptions on event handlers
+                // Don't throw exceptions on event handlers
             }
             finally
             {
                 NativeReboot();
             }
         }
-
 
         #region external methods declarations
 
