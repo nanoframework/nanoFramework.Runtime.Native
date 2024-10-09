@@ -6,7 +6,7 @@ Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.Runtime.Nativ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CDFB0245-018C-43BC-BF3A-CA796061554D}"
 	ProjectSection(SolutionItems) = preProject
-		nanoFramework.Runtime.Native.DELIVERABLES.nuspec = nanoFramework.Runtime.Native.DELIVERABLES.nuspec
+		.editorconfig = .editorconfig
 		nanoFramework.Runtime.Native.nuspec = nanoFramework.Runtime.Native.nuspec
 		NuGet.Config = NuGet.Config
 		version.json = version.json
