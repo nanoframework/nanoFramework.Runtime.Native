@@ -12,7 +12,8 @@
     <ProjectGuid>4C4AA37C-19D9-4C41-ADD0-BA83A0E593DA</ProjectGuid>
     <OutputType>Library</OutputType>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>nanoFramework.Runtime.Native</AssemblyName>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
     <NF_IsCoreLibrary>True</NF_IsCoreLibrary>
@@ -44,7 +45,6 @@
   <ItemGroup>
     <Compile Include="RebootOption.cs" />
     <Compile Include="Power.cs" />
-    <Compile Include="GC.cs" />
     <Compile Include="SystemInfo.cs" />
     <Compile Include="ExecutionConstraint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
