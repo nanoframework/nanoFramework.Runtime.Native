@@ -19,4 +19,6 @@ jobs:
     secrets: inherit
     with:
       solutionsToCheck: 'nanoFramework.Runtime.Native.sln'
+      usePreview: true
+      branchToPr: 'develop'
  
