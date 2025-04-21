@@ -19,3 +19,6 @@ jobs:
     secrets: inherit
     with:
       solutionsToCheck: 'nanoFramework.Runtime.Native.sln'
+      usePreview: ${{ github.event.client_payload.usePreview }}
+      branchToPr: ${{ github.event.client_payload.branchToPr }}
+ 
