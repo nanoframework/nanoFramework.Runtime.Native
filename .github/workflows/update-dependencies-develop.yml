@@ -3,14 +3,14 @@
 
 # This workflow will periodically check .NET nanoFramework dependencies and updates them in the repository it's running.
 
-name: Daily update dependencies
+name: Daily update dependencies (develop)
 
 on:
   schedule:
   # At 00:00 UTC.
   - cron:  '00 10 * * Mon,Thu'
   repository_dispatch:
-    types: update-dependencies
+    types: update-dependencies-develop
 
 jobs:
   update-dependencies:
@@ -19,6 +19,6 @@ jobs:
     secrets: inherit
     with:
       solutionsToCheck: 'nanoFramework.Runtime.Native.sln'
-      usePreview: true
+      previewPackages: true
       branchToPr: 'develop'
  
