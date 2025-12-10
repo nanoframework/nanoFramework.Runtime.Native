@@ -13,5 +13,5 @@ using System.Reflection;
 
 ////////////////////////////////////////////////////////////////
 // update this whenever the native assembly signature changes //
-[assembly: AssemblyNativeVersion("100.0.11.0")]
+[assembly: AssemblyNativeVersion("100.2.0.0")]
 ////////////////////////////////////////////////////////////////
