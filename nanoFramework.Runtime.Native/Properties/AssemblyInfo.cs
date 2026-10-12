@@ -10,8 +10,3 @@ using System.Reflection;
 [assembly: AssemblyCompany("nanoFramework Contributors")]
 [assembly: AssemblyProduct("nanoFramework.Runtime.Native")]
 [assembly: AssemblyCopyright("Copyright (c) .NET Foundation and Contributors")]
-
-////////////////////////////////////////////////////////////////
-// update this whenever the native assembly signature changes //
-[assembly: AssemblyNativeVersion("100.2.0.1")]
-////////////////////////////////////////////////////////////////
